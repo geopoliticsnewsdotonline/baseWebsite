@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="contact.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script> 
+  $(function(){
+    $("#header").load("header.html"); 
+  });
+  </script> 
+  <div id="header"></div>
+</head>
+<body>
+  
+  <form id="contact-form"   method="POST" 
+  action="https://script.google.com/macros/s/AKfycbzd9o9UH2WOyzjwfL2lHTkWntg60YpWHTtWf3EBFpJbeQ4y3Ay0RJY6BG2ejBvjDM3U/exec">
+  
+    <p >Name  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input  type="text" placeholder="Your Name" id="input-name"></p>
+    <p >Email ID &nbsp &nbsp &nbsp<input id="mail" type="email" placeholder="Email ID"> </p>   
+    <p >City  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp<input id="city" type="text" placeholder="City">  </p>  
+    <p >State &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input id="state" type="text" placeholder="State"></p>   
+    <p >Country &nbsp &nbsp&nbsp&nbsp&nbsp<input type="country" placeholder="Country"></p> 
+    <a href="thankyou.html"><button id="contact-btn">Submit</button></a>
+     
+  </form>
+<!--
+<form 
+  method="POST" 
+  action="YOUR_WEBAPP_URL"
+>
+  <p>Email</p><input name="Email" type="email" placeholder="Email" required>
+  <p>Name</p><input name="Name" type="text" placeholder="Name" required>
+  <button type="submit">Send</button>
+</form>-->
+
+
+<script src="home.js"></script>
+</body>
+
+<footer>
+  <script> 
+   $(function(){
+     $("#footer1").load("footer.html"); 
+   });
+   </script> 
+   <div id="footer1"></div>
+</footer>
+  
+</html>
